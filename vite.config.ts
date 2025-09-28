@@ -1,0 +1,1 @@
+import { defineConfig } from \"vite\";\nimport react from \"@vitejs/plugin-react-swc\";\nimport path from \"path\";\n\n// https://vitejs.dev/config/\nexport default defineConfig(({ mode }) => ({\n  server: {\n    host: \"::\",\n    port: 8080,\n  },\n  plugins: [\n    react(),\n  ],\n  resolve: {\n    alias: {\n      \"@\": path.resolve(__dirname, \"./src\"),\n    },\n  },\n}));
