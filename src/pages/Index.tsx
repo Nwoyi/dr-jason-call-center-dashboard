@@ -1,0 +1,1 @@
+import { CallsDashboard } from \"@/components/CallsDashboard\";\n\nconst Index = () => {\n  return <CallsDashboard />;\n};\n\nexport default Index;
